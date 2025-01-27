@@ -1,9 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test4AbstractionSalaries", "Test4AbstractionSalaries\Test4AbstractionSalaries.csproj", "{ABD5C40C-0461-4408-9D3A-C56116EFA412}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test4InterfacesAnimals", "Test4InterfacesAnimals\Test4InterfacesAnimals.csproj", "{C83B932F-55BA-4150-9FD9-9EFE3756F7A4}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABD5C40C-0461-4408-9D3A-C56116EFA412}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABD5C40C-0461-4408-9D3A-C56116EFA412}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABD5C40C-0461-4408-9D3A-C56116EFA412}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABD5C40C-0461-4408-9D3A-C56116EFA412}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C83B932F-55BA-4150-9FD9-9EFE3756F7A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C83B932F-55BA-4150-9FD9-9EFE3756F7A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C83B932F-55BA-4150-9FD9-9EFE3756F7A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C83B932F-55BA-4150-9FD9-9EFE3756F7A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
