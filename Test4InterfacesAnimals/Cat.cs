@@ -17,11 +17,13 @@ namespace Test4InterfacesAnimals
         public override string MakeNoise()
 
         {
-            return "Meow";
+            Console.WriteLine("Meow!");
+            return "Meow!";
         }
 
         public override string MakeTrick()
         {
+            Console.WriteLine("No trick for you! I'm too lazy");
             return "No trick for you! I'm too lazy!";
         }
     }

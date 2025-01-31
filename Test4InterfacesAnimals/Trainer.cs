@@ -44,7 +44,7 @@ namespace Test4InterfacesAnimals
         public void Work(IAnimal entity)
         {
             this.Entity = entity;
-            Console.WriteLine($"Trainer {this.Name} works with {this.Entity}!"); //this
+            Console.WriteLine($"Trainer {this.Name} works with {this.Type}!"); //this
         }
 
         public void Make()

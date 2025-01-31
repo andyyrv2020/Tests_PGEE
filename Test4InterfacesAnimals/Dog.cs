@@ -18,12 +18,14 @@ namespace Test4InterfacesAnimals
         public override string MakeNoise()
 
         {
+            Console.WriteLine("Woof!");
             return "Woof!";
         }
 
         public override string MakeTrick()
 
         {
+            Console.WriteLine("Hold my paw, human!");
             return "Hold my paw, human!";
         }
 
