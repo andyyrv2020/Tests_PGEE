@@ -8,7 +8,10 @@ namespace Test4InterfacesAnimals
 {
 
     interface IMakeTrick
+
     {
-        string MakeTrick(); //липсваше ;
+
+        string MakeTrick();
+
     }
 }

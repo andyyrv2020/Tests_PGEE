@@ -8,7 +8,10 @@ namespace Test4InterfacesAnimals
 {
 
     interface IMakeNoise
+
     {
+
         string MakeNoise();
+
     }
 }

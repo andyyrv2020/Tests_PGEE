@@ -7,49 +7,87 @@ using System.Xml.Linq;
 
 namespace Test4InterfacesAnimals
 {
-    class Trainer //class
+    class Trainer
 
     {
+
         private IAnimal entity;
+
         private string name;
 
+
+
         public Trainer(string name, IAnimal entity)
+
         {
+
             this.Name = name;
+
             this.Entity = entity;
+
         }
 
-        public string Name
+
+
+        public string Name 
+
         {
-            get { return name; } // липсва
+            get { return name; } // name
+
             private set
+
             {
+
                 if (string.IsNullOrEmpty(value) || string.IsNullOrWhiteSpace(value))
+
                 {
+
                     throw new ArgumentException("Name can't be null or empty!");
                 }
+
                 name = value;
+
             }
+
         }
 
-        public IAnimal Entity
+        public IAnimal Entity 
+
         {
-            get { return entity; }// entity
+
+            get { return entity; }// entity 
+
             private set
+
             {
+
                 entity = value;
+
             }
+
         }
+
+
 
         public void Work(IAnimal entity)
+
         {
+
             this.Entity = entity;
-            Console.WriteLine($"Trainer {this.Name} works with {this.Type}!"); //this
+
+            Console.WriteLine($"Trainer {name} works with {entity.Name}!");//this.Entity.Name
+
         }
 
+
+
         public void Make()
+
         {
+
             this.Entity.Perform();
+
         }
+
     }
 }

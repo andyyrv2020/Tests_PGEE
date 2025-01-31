@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Test4InterfacesAnimals
 {
-
     abstract class Animal : IAnimal
 
     {
@@ -23,6 +22,7 @@ namespace Test4InterfacesAnimals
             Name = name;
             Type = type;
         }
+
 
 
 
@@ -52,10 +52,8 @@ namespace Test4InterfacesAnimals
 
 
 
-        public string Type //построен целия type
-
+        public string Type
         {
-
             get { return type; }
 
             private set
@@ -73,7 +71,6 @@ namespace Test4InterfacesAnimals
                 type = value;
 
             }
-
         }
 
 
@@ -82,8 +79,9 @@ namespace Test4InterfacesAnimals
 
         {
 
-            Console.WriteLine($">>> {this.MakeNoise()}");
 
+            Console.WriteLine($">>> {this.MakeNoise()}");
+            
             Console.WriteLine($">>> {this.MakeTrick()}");
 
         }
@@ -91,12 +89,11 @@ namespace Test4InterfacesAnimals
         public abstract string MakeTrick(); // Abstract method for making tricks
 
 
-
         public override string ToString()
 
         {
 
-            return base.ToString();
+            return $"{Type} {Name}";
 
         }
 

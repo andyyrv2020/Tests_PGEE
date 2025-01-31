@@ -54,12 +54,15 @@
                 if (current == null)
 
                 {
+
                     Console.WriteLine("No such name in the Database!");
-                }
+                }//missing
+
+
 
                 else
-                {
 
+                {
 
                     if (trainer == null)
 
@@ -68,14 +71,14 @@
                         trainer = new Trainer(trainerName, current);
 
                     }
+
                     trainer.Work(current);
+                    trainer.Make();
+
                 }
-
-                name = Console.ReadLine();  
-
+                name = Console.ReadLine();
             }
         }
-
 
 
         private static IAnimal CreateAnimal(string[] line)
@@ -105,5 +108,6 @@
             return animal;
 
         }
+
     }
-}
+}//missing

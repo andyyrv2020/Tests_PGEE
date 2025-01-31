@@ -4,6 +4,11 @@
     {
         static void Main(string[] args)
         {
+            Animal defaultAnimal = new Animal();
+            defaultAnimal.MakeTrick();
+
+            Dog dog = new Dog();
+            dog.MakeTrick();
 
         }
     }
